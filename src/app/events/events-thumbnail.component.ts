@@ -1,6 +1,4 @@
 import { Component,Input, Output,EventEmitter } from '@angular/core'
-
-
 @Component({
   selector: 'event-thumbnail',
   template:`
@@ -25,9 +23,14 @@ export class EventThumbnailComponent{
   //expect input from component of any type
   @Input() event:any
   @Output() eventClick = new EventEmitter()
+  someProperty:any ="Some values"
 
   handleClickMe(){
     this.eventClick.emit(this.event.name)
+  }
+
+  logFoo(){
+    console.log('foo')
   }
 
 }
