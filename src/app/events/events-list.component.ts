@@ -109,6 +109,7 @@ export class EventsListComponent{
         city: 'Amsterdam',
         country: 'Netherlands'
       },
+      onlineurl: 'https://wedgecorner.co.ke',
       sessions: [
         {
           id: 1,
