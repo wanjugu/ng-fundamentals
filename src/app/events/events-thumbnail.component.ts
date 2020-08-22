@@ -1,4 +1,6 @@
 import { Component,Input, Output,EventEmitter } from '@angular/core'
+import { IEvent } from './shared/index'
+
 @Component({
   selector: 'event-thumbnail',
   template:`
@@ -30,6 +32,6 @@ import { Component,Input, Output,EventEmitter } from '@angular/core'
 
 export class EventThumbnailComponent{
   //expect input from component of any type
-  @Input() event:any
+  @Input() event:IEvent[]
 
 }
